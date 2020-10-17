@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:myapp/bloc/weather_bloc.dart';
 
 import 'package:myapp/pages/weather_search_page.dart';
-import 'cubit/weather_cubit.dart';
+//mport 'cubit/weather_cubit.dart';
 import 'model/weather_repository.dart';
 
 void main() => runApp(MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: BlocProvider(
-        create: (context) => WeatherCubit(FakeWeatherRepository()),
+        //create: (context) => WeatherCubit(FakeWeatherRepository()),
+        create: (context) => WeatherBloc(FakeWeatherRepository()),
         child: WeatherSearchPage(),
       ),
     );
