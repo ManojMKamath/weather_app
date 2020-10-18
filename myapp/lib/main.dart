@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:myapp/bloc/weather_bloc.dart';
 
 import 'package:myapp/pages/weather_search_page.dart';
-//mport 'cubit/weather_cubit.dart';
+//import 'cubit/weather_cubit.dart';
 import 'model/weather_repository.dart';
 
 void main() => runApp(MyApp());
